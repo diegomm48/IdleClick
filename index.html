@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Idle Clicker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Idle Clicker</h1>
+
+        <img src="assets/mascot.png" alt="Mascot" class="mascot">
+
+        <div class="stats">
+            <p>💰 <span id="score">0</span> points</p>
+            <p>⚡ <span id="rate">0</span> pts/sec</p>
+        </div>
+
+        <div class="buttons">
+            <button id="clickBtn">
+                <img src="assets/coin.png" alt="Click" /> Click!
+            </button>
+            <button id="buyAutoClickerBtn">
+                <img src="assets/auto.png" alt="Auto" /> Buy AutoClicker (<span id="autoClickerCost">10</span>)
+            </button>
+            <button id="upgradeRateBtn">
+                ⚡ Upgrade Rate (<span id="rateUpgradeCost">25</span>)
+            </button>
+            <button id="megaClickBtn">💥 Mega Click (+50)</button>
+            <button id="prestigeBtn" disabled>🔁 Prestige (1000 pts)</button>
+            <p id="prestigeStats">Prestige Points: <span id="prestigePoints">0</span></p>
+
+        </div>
+
+        <div id="popupContainer"></div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
