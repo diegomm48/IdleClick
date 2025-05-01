@@ -29,14 +29,28 @@
             <button id="upgradeRateBtn">
                 ⚡ Upgrade Rate (<span id="rateUpgradeCost">25</span>)
             </button>
-            <button id="megaClickBtn">💥 Mega Click (+50)</button>
+            <button id="megaClickBtn" style="display: none;"> Mega Click (+50)</button>
             <button id="prestigeBtn" disabled>🔁 Prestige (1000 pts)</button>
             <p id="prestigeStats">Prestige Points: <span id="prestigePoints">0</span></p>
+
 
         </div>
 
         <div id="popupContainer"></div>
     </div>
+    <!-- Upgrade Store Modal -->
+    <div id="upgradeModal" class="modal">
+        <div class="modal-content">
+            <span id="closeUpgradeModal" class="close">&times;</span>
+            <h2>🛒 Upgrade Store</h2>
+            <button id="upgradeGoldenClicksBtn">Golden Clicks (+5/click) - 100 pts</button>
+            <button id="upgradeSuperAutoClickerBtn">Super AutoClicker (+5 rate) - 200 pts</button>
+            <button id="upgradeDoubleIncomeBtn">Double Income (x2) - 500 pts</button>
+        </div>
+    </div>
+
+    <!-- Open Modal Button -->
+    <button id="openUpgradeModalBtn" style="display: none;">Open Upgrade Store</button>
 
     <script type="module" src="./app.js"></script>
 </body>
