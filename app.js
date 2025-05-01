@@ -36,10 +36,12 @@ var rateUpgradeCostEl = document.getElementById("rateUpgradeCost");
 var upgradeGoldenClicksBtn = document.getElementById("upgradeGoldenClicksBtn");
 var upgradeSuperAutoClickerBtn = document.getElementById("upgradeSuperAutoClickerBtn");
 var upgradeDoubleIncomeBtn = document.getElementById("upgradeDoubleIncomeBtn");
+var prestigeThresholdEl = document.getElementById("prestigeThreshold");
 //  Update UI to match current game state 
 function updateUI() {
     scoreEl.textContent = score.toFixed(1).toString();
     rateEl.textContent = rate.toString();
+    prestigeThresholdEl.textContent = prestigeThreshold.toString();
     autoClickerCostEl.textContent = autoClickerCost.toString();
     rateUpgradeCostEl.textContent = rateUpgradeCost.toString();
     prestigePointsEl.textContent = prestigePoints.toString();
@@ -70,7 +72,6 @@ clickBtn.addEventListener("click", function () {
 //  Passive auto-clicking every second 
 setInterval(function () {
     score += rate * prestigeMultiplier;
-    rate = rate * prestigeMultiplier;
     updateUI();
     if (prestigePoints > 0) {
         openUpgradeModalBtn.style.display = "block";

@@ -39,6 +39,7 @@ const rateUpgradeCostEl = document.getElementById("rateUpgradeCost")!;
 const upgradeGoldenClicksBtn = document.getElementById("upgradeGoldenClicksBtn")!;
 const upgradeSuperAutoClickerBtn = document.getElementById("upgradeSuperAutoClickerBtn")!;
 const upgradeDoubleIncomeBtn = document.getElementById("upgradeDoubleIncomeBtn")!;
+const prestigeThresholdEl = document.getElementById("prestigeThreshold")!;
 
 
 
@@ -47,6 +48,7 @@ const upgradeDoubleIncomeBtn = document.getElementById("upgradeDoubleIncomeBtn")
 function updateUI() {
     scoreEl.textContent = score.toFixed(1).toString();
     rateEl.textContent = rate.toString();
+    prestigeThresholdEl.textContent = prestigeThreshold.toString();
     autoClickerCostEl.textContent = autoClickerCost.toString();
     rateUpgradeCostEl.textContent = rateUpgradeCost.toString();
     prestigePointsEl.textContent = prestigePoints.toString();
