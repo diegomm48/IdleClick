@@ -1,5 +1,7 @@
 /**
  * @jest-environment jsdom
+ * 
+ * Note: Used ChatGPT and Google to figure out how to test TypeScript code
  */
 
 import {
